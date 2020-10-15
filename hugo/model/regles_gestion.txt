@@ -1,0 +1,30 @@
+Un message est définit par une référence
+Un message est décrit par un objet, un contenu, l'email de l'expéditeur, le nom de l'expéditeur, l'entreprise de l'expéditeur
+
+Une formation est définit par un numéro
+Une formation est décrit par un titre, un contenu, une date
+
+Une slack est définit par un numéro
+Une slack est décrit par un libelle, une image
+Une slack est associé à aucune ou plusieurs projet(s)
+
+Role est une entité forte de Profil
+Un role est définit par un identifiant
+Un role est décrit par un libelle
+Un role est lié à un ou plusieurs profil(s)
+
+Profil est une entité faible de Role
+Un profil est définit par un numéro
+Un profil est décrit par un nom, un mot de passe
+Un profil possède un seul rôle
+
+Projet est une entité forte de Documentation
+Un projet est définit par une référence
+Un projet est décrit par un nom, un contexte, un contenu, une periode
+Un projet est concerné par un ou plusieurs document(s)
+Un projet est associé à un ou plusieurs slack(s)
+
+Documentation est une entité faible de Projet
+Une documentation est définit par c_id_documentation
+Une documentation est décrit par c_titre_documentation, c_lien_documentation
+Une documentation est concerné par un seul projet
